@@ -1,0 +1,6 @@
+Dự án thang máy đơn giản sử dụng Arduino uno ( gồm 5 tầng )
+  Hệ thống điều khiển thang máy trong đồ án được thiết kế sử dụng Arduino kết hợp với các IC 74HC595 và 74HC165 để quản lý đầu ra và đầu vào một cách hiệu quả.
+Bên trong thang máy: Hệ thống bao gồm các nút bấm chọn tầng từ 1 đến 5, nút Open (mở cửa), Close (đóng cửa), và Warning (cảnh báo). Các tín hiệu từ nút bấm được xử lý thông qua IC 74HC165, giúp giảm số lượng chân cần thiết trên Arduino.
+Bên ngoài thang máy: Tại mỗi tầng, có một nút gọi tầng tương ứng. Các tín hiệu này cũng được truyền qua IC 74HC165, cho phép thu thập tín hiệu hiệu quả từ nhiều tầng.
+Hiển thị trạng thái: Các LED báo tầng, LED di chuyển, và LED cảnh báo được điều khiển thông qua IC 74HC595, giúp mở rộng số lượng chân điều khiển mà Arduino có thể quản lý.
+  Hệ thống hoạt động dựa trên các thuật toán điều khiển, đảm bảo thang máy xử lý các yêu cầu từ bên trong và bên ngoài theo thứ tự ưu tiên hợp lý. Các trạng thái như vị trí hiện tại của thang, trạng thái di chuyển, và cảnh báo được cập nhật và hiển thị chính xác qua LED.
